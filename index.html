@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pertama Saya</title>
+    <style>
+        /* Ini adalah CSS untuk menghias web */
+        body {
+            /* 1. Gradasi warna latar belakang */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            
+            /* 2. Agar tinggi latar belakang penuh satu layar */
+            min-height: 100vh;
+            margin: 0;
+            
+            /* 3. Membuat kotak putih otomatis tepat di tengah layar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }S
+        .kotak-profil {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }/* Efek saat kursor menyentuh tombol */
+        button:hover {
+            background-color: #0056b3; /* Warna biru jadi sedikit lebih gelap */
+            transform: scale(1.1);      /* Tombol membesar 10% */
+            transition: 0.3s;           /* Gerakan animasinya halus */
+        }
+
+        /* Efek saat kursor menyentuh link WhatsApp */
+        a:hover {
+            color: #128c7e !important;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak-profil">
+        <h1>Halo Dunia!</h1>
+        <img src="profil.JPG" alt="Foto Profil Saya" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin: 15px; border: 3px solid #007bff;">
+        <p>Saya sedang belajar buat web dari nol.</p>
+        <button onclick="alert('Semangat belajarnya!')">Klik Saya</button>
+        <br><br>
+<a href="https://wa.me/6282113995765" target="_blank" style="text-decoration: none; color: #25d366; font-weight: bold;">
+    Hubungi saya di WhatsApp
+</a>
+    </div>
+
+</body>
+</html>
